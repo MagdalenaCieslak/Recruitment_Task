@@ -1,0 +1,38 @@
+body{
+     background-color: #909488;
+}
+
+#header{
+	
+	background-color: black;
+	color: #ffffff;
+	min-height: 60px;
+	text-align: center;
+	font-size: 30px;
+	padding-top: 20px;
+}
+
+#container{
+	width: 1000px;
+	background-color: #941B07;
+	margin-left: auto;
+	margin-right:auto;
+	text-align: center;
+	padding: 20px;
+
+	
+}
+
+table {
+    border-collapse: collapse;
+	background-color: #84877C;
+	margin-left: 110px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+td {
+	width: 130px;
+}

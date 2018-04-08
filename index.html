@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	
+	
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="jquery-3.3.1"></script>
+	<script type="text/javascript" src="moment.js"></script>
+	<script type="text/javascript" src="table.js"></script>
+	
+	
+
+</head>
+<body onload="addTable();">
+<div id="header">
+Zadanie rekrutacyjne
+</div>
+
+
+<div id="container">
+<table>
+<tr>
+<td> ID  <button type="button" onclick="mySorting('id', 'asc');">&#8593;</button><button type="button" onclick="mySorting('id', 'desc');">&#8595;</button></td>
+<td> First Name <button type="button" onclick="mySorting('firstName', 'asc');">&#8593;</button><button type="button" onclick="mySorting('firstName', 'desc');">&#8595;</button></td>
+<td> Last Name <button type="button" onclick="mySorting('LastName', 'asc');">&#8593;</button><button type="button" onclick="mySorting('LastName', 'desc');">&#8595;</button></td>
+<td> DATE OF BIRTH <button type="button" onclick="mySorting('dateOfBirth', 'asc');">&#8593;</button><button type="button" onclick="mySorting('dateOfBirth', 'desc');">&#8595;</button></td>
+<td> COMPANY<button type="button" onclick="mySorting('company', 'asc');">&#8593;</button><button type="button" onclick="mySorting('company', 'desc');">&#8595;</button></td>
+<td> NOTE<button type="button" onclick="mySorting('note', 'asc');">&#8593;</button><button type="button" onclick="mySorting('note', 'desc');">&#8595;</button></td>
+</tr>
+</table>
+<div id="MyTable">
+<script>
+myTable(0,5);
+</script>
+
+</div>
+<div id="navigation">
+<script>
+myPagination();
+</script>
+
+</div>
+
+
+</br>
+<input type="text" id="Input1" onkeyup="myFiltering(0, 'Input1')" placeholder="Search for ID.."> </br></br>
+<input type="text" id="Input2" onkeyup="myFiltering(1, 'Input2')" placeholder="Search for first names.."> </br></br>
+<input type="text" id="Input3" onkeyup="myFiltering(2, 'Input3')" placeholder="Search for last names.."> </br></br>
+<input type="text" id="Input4" onkeyup="myFiltering(4, 'Input4')" placeholder="Search for company.."> </br></br>
+<input type="text" id="Input5" onkeyup="myFiltering(5, 'Input5')" placeholder="Search for note.."> </br></br>
+<input type="text" id="Input6" onkeyup="myFiltering(3, 'Input6')" placeholder="YYYY-MM-DD"> </br></br>
+ 
+</div>
+
+</body>
